@@ -1,0 +1,20 @@
+[project]
+name = "airflow-learnings"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Codngwthubaid", email = "codngwthubaid@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "apache-airflow>=3.3.2",
+    "apache-airflow-providers-standard>=1.20.1",
+]
+
+[project.scripts]
+airflow-learnings = "airflow_learnings:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
